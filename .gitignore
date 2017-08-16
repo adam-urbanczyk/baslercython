@@ -1,0 +1,17 @@
+lib/** 
+include/**
+*.VC.db
+/PylonApplications/lib/libboost_date_time-vc140-mt-1_63.lib
+/PylonApplications/lib/libboost_system-vc140-mt-1_63.lib
+/PylonApplications/lib/libboost_thread-vc140-mt-1_63.lib
+/PylonApplications/lib/libboost_chrono-vc140-mt-1_63.lib
+/PylonApplications/include/opencv2
+/PylonApplications/include/boost_1_62_0
+/PylonApplications/x64/Debug
+/PylonApplications/x64/Release
+/PylonApplications/CaptureCameraImages/x64/Release
+/PylonApplications/PylonImageAPI/x64/Release
+/PylonApplications/PylonImageApp/x64/Release
+/PylonApplications/ResetImages/x64/Release
+/PylonApplications/VideoCreator/x64/Release
+/PylonApplications/VideoCreator/x64/Debug

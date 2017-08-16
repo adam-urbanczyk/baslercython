@@ -1,0 +1,131 @@
+Pylon:
+
+
+
+
+
+
+
+
+method to be implemented:
+- Waiting for Multiple Events
+- event notification
+
+- handle exception
+- Save images as video
+- Save image as image
+
+
+
+to test:
+- frame start trigger delay
+
+tested:
+- camera attach (different methods)
+- camera open
+- camera grab images (different methods, check for status)
+- camera retrieve result
+- create usb camera instances, muliple
+- functions to trigger multiple cameras using one command
+- set properties (will need to change structure)
+(- single acquired image
+- continuous acquired image
+- acquisition start and stop command) 
+ 
+ 
+method implemented, not test:
+
+
+ 
+ 
+ 
+ 
+ Pylon Structure:
+ InstantCamera -> CDeviceSpecificInstantCameraT ->BaslerUSBCamera
+ 
+ 
+ 
+ 
+- image: get different properties of images
+- ctl factory: isaccssible: access mode 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+function to implemented:
+- create multiple device
+- functions to trigger multiple cameras using one command
+
+single acquired image
+continuous acquired image
+acquisition start and stop command
+grab images
+retrieve result
+
+exposure time control
+frame rate
+
+
+
+
+
+
+method that need to handle exception:
+- open
+- start_grabbing
+
+
+
+
+
+
+
+
+
+
+
+
+_InstantCameraParams 
+
+
+No:
+DeviceAcessMode
+need  to recheck for pxd file:
+
+GenAPi
+INode
+
+complete for pxd file:
+InstantCamera:
+ - CInstantCamera
+ - enum: EGrabStrategy, ECleanup, EGrabLoop, ERegistrationMode, ECameraEventAvailability, ETimeoutHandling: to be handled
+ 
+ConfigurationEventHandler:
+ - CConfigurationEventHandler
+
+ImageEventHandler:
+ - CImageEventHandler
+
+CameraEventHandler
+ - CameraEventHandler
+
+ 
+
+pyx:
+Method to be implemented:
+camera
+ - 
+ 
+ 
+single acquired image
+continuous acquired image
+
+acquisition start and stop command
+grab images

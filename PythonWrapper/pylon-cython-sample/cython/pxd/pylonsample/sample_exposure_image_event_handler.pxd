@@ -1,0 +1,13 @@
+from pylon.usb.cbasler_usb_camera_event_handler cimport CBaslerUsbCameraEventHandler
+from pylon.usb.cbasler_usb_image_event_handler cimport CBaslerUsbImageEventHandler
+from baslerpylon.pylon.usb.basler_usb_camera_event_handler cimport BaslerUsbCameraEventHandler
+from baslerpylon.pylon.usb.basler_usb_image_event_handler cimport BaslerUsbImageEventHandler
+from pylonsample.csample_exposure_image_event_handler cimport  CSampleExposureImageEventHandler
+
+
+
+
+cdef class SampleExposureImageEventHandler(BaslerUsbImageEventHandler):
+   cdef:
+      CSampleExposureImageEventHandler* sample_image_event_object
+   cdef CBaslerUsbImageEventHandler* get_image_event_handler_object(self)

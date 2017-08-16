@@ -1,0 +1,7 @@
+from pylon.usb.cbasler_usb_image_event_handler cimport CBaslerUsbImageEventHandler
+from baslerpylon.pylon.usb.basler_usb_image_event_handler cimport BaslerUsbImageEventHandler
+from pylonsample.csample_chunk_ts_image_event_handler cimport CSampleChunkTSImageEventHandler
+
+cdef class SampleChunkTSImageEventHandler(BaslerUsbImageEventHandler):
+    cdef CSampleChunkTSImageEventHandler* simage_event
+    cdef CBaslerUsbImageEventHandler* get_image_event_handler_object(self)
