@@ -5,20 +5,20 @@
 
 
 ## Structure
---setup
---cython 
-  --pxd 
-       --cinterface //contain files that are like the headers for pylon c++ files
-	   --pylon
-           --base
-	   --genapi
-           ....
-       --cythoninterface //contain files that are like the headers for cython .pyx file
-	   --pylon
-           ...
-  --pyx
-       --pylon
-       --....
+--setup <br/>
+--cython <br/>
+&nbsp;&nbsp;--pxd <br/>
+&nbsp;&nbsp;&nbsp;--cinterface //contain files that are like the headers for pylon c++ files<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--pylon<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--base<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--genapi<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;....<br/>
+&nbsp;&nbsp;&nbsp;--cythoninterface //contain files that are like the headers for cython .pyx file<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--pylon<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br/>
+&nbsp;&nbsp;--pyx<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--pylon<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--....<br/>
   
 
 ## How to use
