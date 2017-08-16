@@ -1,10 +1,10 @@
-=========Reference==========
-This project is refered from the porject https://github.com/mabl/PyPylon
-The pypylon project extracts certain function from pylon in C++ to pylon in python
-This project aims to extract all (or mostly) pylon api in c++ to python
+## Reference
+- This project is refered from the porject https://github.com/mabl/PyPylon
+- The pypylon project extracts certain function from pylon in C++ to pylon in python
+- This project aims to extract all (or mostly) pylon api in c++ to python
 
 
-========Structure========
+## Structure
 --setup
 --cython 
   --pxd 
@@ -21,11 +21,11 @@ This project aims to extract all (or mostly) pylon api in c++ to python
        --....
   
 
-=======How to use========
-----Requirement
+## How to use
+Requirement
 - install Python, Cython, C++ compiler
 
-----Run
+Run
 - from main folder: setup.py install
 - call the api in python file 
 
